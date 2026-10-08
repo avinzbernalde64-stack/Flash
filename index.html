@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FlashPay</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <div class="top">
+            <h1>FlashPay</h1>
+            <span class="status" id="status">OFF</span>
+        </div>
+
+        <div class="flashlight">
+            <div class="circle" id="circle">
+                🔦
+            </div>
+        </div>
+
+        <h2 id="lightText">Flashlight is OFF</h2>
+
+        <p class="description">
+            Turn on your flashlight for free.
+            Subscription is required to turn it off.
+        </p>
+
+        <div class="buttons">
+
+            <button id="onBtn" class="on-btn">
+                🔆 TURN ON
+            </button>
+
+            <button id="offBtn" class="off-btn">
+                🔒 TURN OFF
+            </button>
+
+        </div>
+
+        <button id="subscribeBtn" class="subscribe-btn">
+            ⭐ SUBSCRIBE TO UNLOCK
+        </button>
+
+        <div class="subscription" id="subscription">
+            <h3>Premium Subscription</h3>
+
+            <p>
+                Unlock the ability to turn off the flashlight.
+            </p>
+
+            <div class="price">
+                ₱49.00 / month
+            </div>
+
+            <button id="confirmSubscribe">
+                Subscribe Now
+            </button>
+
+            <button id="closeSubscribe" class="close">
+                Cancel
+            </button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
