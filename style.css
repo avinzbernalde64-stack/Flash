@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #080808;
+    color: white;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app {
+    width: 100%;
+    max-width: 430px;
+    min-height: 100vh;
+
+    padding: 25px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 70px;
+}
+
+.top h1 {
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+.status {
+    background: #222;
+    padding: 8px 15px;
+    border-radius: 20px;
+
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.flashlight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 35px;
+}
+
+.circle {
+    width: 190px;
+    height: 190px;
+
+    border-radius: 50%;
+
+    background: #151515;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 80px;
+
+    box-shadow:
+        0 0 0 10px #101010,
+        0 0 50px rgba(255, 255, 255, 0.05);
+
+    transition: 0.4s;
+}
+
+.circle.active {
+    background: #fff;
+    box-shadow:
+        0 0 30px #fff,
+        0 0 80px rgba(255, 255, 255, 0.7);
+}
+
+h2 {
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+.description {
+    text-align: center;
+    color: #888;
+    line-height: 1.5;
+
+    max-width: 320px;
+
+    margin-bottom: 35px;
+}
+
+.buttons {
+    width: 100%;
+
+    display: flex;
+    gap: 12px;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+
+    font-weight: bold;
+    font-size: 15px;
+
+    border-radius: 14px;
+
+    padding: 17px;
+
+    transition: 0.2s;
+}
+
+button:active {
+    transform: scale(0.96);
+}
+
+.on-btn {
+    flex: 1;
+
+    background: white;
+    color: black;
+}
+
+.off-btn {
+    flex: 1;
+
+    background: #222;
+    color: white;
+}
+
+.off-btn.locked {
+    opacity: 0.6;
+}
+
+.subscribe-btn {
+    width: 100%;
+
+    margin-top: 15px;
+
+    background: #f5c542;
+    color: black;
+}
+
+.subscription {
+    display: none;
+
+    position: fixed;
+
+    left: 50%;
+    bottom: 0;
+
+    transform: translateX(-50%);
+
+    width: 100%;
+    max-width: 430px;
+
+    background: #151515;
+
+    padding: 30px;
+
+    border-radius: 25px 25px 0 0;
+
+    text-align: center;
+
+    box-shadow: 0 -10px 40px rgba(0,0,0,0.5);
+}
+
+.subscription.show {
+    display: block;
+}
+
+.subscription h3 {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.subscription p {
+    color: #aaa;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 28px;
+    font-weight: bold;
+
+    margin-bottom: 20px;
+}
+
+#confirmSubscribe {
+    width: 100%;
+    background: #f5c542;
+    color: black;
+}
+
+.close {
+    width: 100%;
+    margin-top: 10px;
+
+    background: #292929;
+    color: white;
+}
